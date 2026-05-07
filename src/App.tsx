@@ -91,9 +91,9 @@ function App() {
       .reduce((total, sub) => total + calculateNet(sub.correct, sub.incorrect), 0);
   }, [aytSubjects]);
 
-  const aytTotalNet = Math.max(aytSAYNet, aytEANet); 
+  const aytTotalNet = aytSAYNet; 
 
-  const isWinner = tytTotalNet > 90 && aytTotalNet > 65;
+  const isWinner = tytTotalNet >= 95 && aytTotalNet >= 65;
 
   const renderSubjectTable = (title: string, subjects: Subject[], type: 'TYT' | 'AYT') => (
     <div className="glass" style={{ animation: 'fadeIn 0.6s ease-out' }}>
