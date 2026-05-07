@@ -191,11 +191,9 @@ function App() {
       {showResult && isWinner && (
         <div className="overlay" onClick={() => setShowResult(false)}>
           <div className="glass overlay-card" onClick={(e) => e.stopPropagation()}>
-            <img 
-              src="/tooth.png" 
-              alt="Beyaz Diş Görseli" 
-              className="tooth-image"
-            />
+            <div style={{ fontSize: '6rem', textAlign: 'center', marginBottom: '1rem', filter: 'drop-shadow(0 0 20px rgba(6, 182, 212, 0.6))', animation: 'float 3s ease-in-out infinite' }}>
+              🦷
+            </div>
             <h2 className="winner-text">
               Kazandınız
             </h2>
