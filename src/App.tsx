@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import './index.css';
+import sevvalImage from './assets/sevval.jpeg';
 
 interface Subject {
   id: string;
@@ -191,9 +192,11 @@ function App() {
       {showResult && isWinner && (
         <div className="overlay" onClick={() => setShowResult(false)}>
           <div className="glass overlay-card" onClick={(e) => e.stopPropagation()}>
-            <div style={{ fontSize: '6rem', textAlign: 'center', marginBottom: '1rem', filter: 'drop-shadow(0 0 20px rgba(6, 182, 212, 0.6))', animation: 'float 3s ease-in-out infinite' }}>
-              🦷
-            </div>
+            <img 
+              src={sevvalImage} 
+              alt="Başarı Görseli" 
+              className="tooth-image"
+            />
             <h2 className="winner-text" style={{ fontSize: '2.5rem', lineHeight: '1.2', textTransform: 'none' }}>
               Harika Gidiyorsun Şevval!
             </h2>
