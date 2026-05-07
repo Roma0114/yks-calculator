@@ -194,11 +194,11 @@ function App() {
             <div style={{ fontSize: '6rem', textAlign: 'center', marginBottom: '1rem', filter: 'drop-shadow(0 0 20px rgba(6, 182, 212, 0.6))', animation: 'float 3s ease-in-out infinite' }}>
               🦷
             </div>
-            <h2 className="winner-text">
-              Kazandınız
+            <h2 className="winner-text" style={{ fontSize: '2.5rem', lineHeight: '1.2', textTransform: 'none' }}>
+              Harika Gidiyorsun Şevval!
             </h2>
-            <p className="winner-desc">
-              Helal Şevval bu şekilde devam et! 🦷 Diş Hekimliği Fakültesi'ne hoş geldiniz...
+            <p className="winner-desc" style={{ fontSize: '1.1rem', lineHeight: '1.6', textAlign: 'justify', marginTop: '1rem' }}>
+              Şu anki netlerinle hedeflerine çok yakınsın! Bu zorlu YKS maratonunda gösterdiğin azim ve kararlılık gerçekten takdire şayan. Unutma ki başarı tesadüf değildir; senin gibi disiplinli ve ne istediğini bilerek çalışanların hakkıdır. Şimdi rehavete kapılma vakti değil, tam aksine bu ivmeyi koruyarak denemelerde daha da hızlanma vakti. Aynı kararlılıkla, pes etmeden bu yolda yürümeye devam et. Hayalindeki o üniversitenin kapısından içeri adım atana kadar durmak yok. Sen bu işi kesinlikle başaracaksın!
             </p>
             <button className="btn-close" onClick={() => setShowResult(false)}>Kapat</button>
           </div>
@@ -208,11 +208,11 @@ function App() {
       {showResult && !isWinner && (
         <div className="overlay" onClick={() => setShowResult(false)}>
           <div className="glass overlay-card" style={{ animation: 'none', borderColor: 'rgba(239, 68, 68, 0.3)' }} onClick={(e) => e.stopPropagation()}>
-            <h2 className="loser-text">
-              Başarabilirsin Şevval!
+            <h2 className="loser-text" style={{ fontSize: '2.5rem', lineHeight: '1.2' }}>
+              Asla Pes Etme Şevval!
             </h2>
-            <p className="winner-desc">
-              Şu anki netlerinizle (TYT: {tytTotalNet.toFixed(2)}, AYT: {aytTotalNet.toFixed(2)}) hedefinize (TYT 90, AYT 65) ulaşamadınız. Ama pes etmek yok, yapabileceğini biliyoruz!
+            <p className="winner-desc" style={{ fontSize: '1.1rem', lineHeight: '1.6', textAlign: 'justify', marginTop: '1rem' }}>
+              Şu anki netlerin (TYT: {tytTotalNet.toFixed(2)}, AYT: {aytTotalNet.toFixed(2)}) hedeflerinin biraz uzağında olabilir ama bu sadece anlık bir durum. Her yanlış yaptığın soru, aslında sınavdan önce sana doğruyu öğreten gizli birer fırsattır. Zorlanmadan ve yorulmadan büyük zirvelere ulaşılamaz. Şimdi yapman gereken tek şey nerede hata yaptığını analiz etmek ve yarın dünden daha çok çalışmak. Kendine inanmaktan asla vazgeçme; çünkü sen o masanın başında sabırla ter döktüğünde başaramayacağın hiçbir şey yok. Derin bir nefes al ve hayallerin için savaşmaya devam et!
             </p>
             <button className="btn-close" onClick={() => setShowResult(false)}>Kapat</button>
           </div>
