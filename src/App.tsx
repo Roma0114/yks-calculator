@@ -200,7 +200,7 @@ function App() {
               Kazandınız
             </h2>
             <p className="winner-desc">
-              Diş Hekimliği Fakültesi'ne hoş geldiniz! Geleceğin cerrahı...
+              Helal Şevval bu şekilde devam et! 🦷 Diş Hekimliği Fakültesi'ne hoş geldiniz...
             </p>
             <button className="btn-close" onClick={() => setShowResult(false)}>Kapat</button>
           </div>
@@ -211,10 +211,10 @@ function App() {
         <div className="overlay" onClick={() => setShowResult(false)}>
           <div className="glass overlay-card" style={{ animation: 'none', borderColor: 'rgba(239, 68, 68, 0.3)' }} onClick={(e) => e.stopPropagation()}>
             <h2 className="loser-text">
-              Maalesef
+              Başarabilirsin Şevval!
             </h2>
             <p className="winner-desc">
-              Şu anki netlerinizle (TYT: {tytTotalNet.toFixed(2)}, AYT: {aytTotalNet.toFixed(2)}) hedefinize (TYT 90, AYT 65) ulaşamadınız. Çalışmaya devam!
+              Şu anki netlerinizle (TYT: {tytTotalNet.toFixed(2)}, AYT: {aytTotalNet.toFixed(2)}) hedefinize (TYT 90, AYT 65) ulaşamadınız. Ama pes etmek yok, yapabileceğini biliyoruz!
             </p>
             <button className="btn-close" onClick={() => setShowResult(false)}>Kapat</button>
           </div>
